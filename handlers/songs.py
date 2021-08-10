@@ -20,13 +20,13 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-@Client.on_message(filters.command("song") & ~filters.edited)
-async def song(client, message):
-    cap = "@JEBotZ"
+@Client.on_message(filters.command("music") & ~filters.edited)
+async def music(client, message):
+    cap = "@KhiladiKing45"
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("Processing...")
     if not url:
-        await rkp.edit("**What's the song you want?**\nUsage`/song <song name>`")
+        await rkp.edit("**What's the song you want?**\nUsage`/music <song name>`")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
     test = search.result()
     p = json.loads(test)
@@ -100,5 +100,5 @@ async def song(client, message):
                  title=str(rip_data["title"]),
                  performer=str(rip_data["uploader"]),
                  thumb=lol,
-                 caption=cap)  #JEBotZ
+                 caption=cap)  #Khiladiing45
         await rkp.delete()
