@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🧨 **Processing...**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -190,10 +190,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🔆𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
+                            text="𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="🍂𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
+                            text="𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
                             url=f"https://t.me/Godofanjalsupport")
 
                     ]
@@ -226,7 +226,7 @@ async def play(_, message: Message):
         await lel.edit("🎈 **Finding the song...**🎈")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**🎧")
+        await lel.edit("🎵 **Processing sounds**🎶")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -258,10 +258,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🔆𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
+                            text="𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="🍂𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
+                            text="𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
                             url=f"https://t.me/Godofanjalsupport")
 
                     ]
