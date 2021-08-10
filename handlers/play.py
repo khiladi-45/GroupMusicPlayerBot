@@ -100,7 +100,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Mizuki"
+        user.first_name = "AnjalVc"
     usar = user
     wew = usar.id
     try:
@@ -118,7 +118,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Mizuki Music assistant joined this group for play music 🎵**")
+                        message.chat.id, "**AnjalVc joined this group for play music 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -153,7 +153,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Channel 🔊",
-                        url="https://t.me/Infinity_BOTs")
+                        url="https://t.me/Anjalupdates")
                    
                 ]
             ]
@@ -190,11 +190,11 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="🔆𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
+                            text="🍂𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
+                            url=f"https://t.me/Godofanjalsupport")
 
                     ]
                 ]
@@ -223,10 +223,10 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+        await lel.edit("🎈 **Finding the song...**🎈")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("🎵 **Processing sounds...**🎧")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -258,11 +258,11 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="🔆𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
+                            text="🍂𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
+                            url=f"https://t.me/Godofanjalsupport")
 
                     ]
                 ]
@@ -279,7 +279,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
+        caption="**🎸 Song:** {}\n**⏰ Duration:** {} min\n**🧸 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
@@ -290,7 +290,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
+        caption="**🎸 Song:** {}\n**⏰ Duration:** {} min\n**🧸 Added By:** {}\n\n**♻️ Now Playing at `{}`...**".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
         os.remove("final.png")
