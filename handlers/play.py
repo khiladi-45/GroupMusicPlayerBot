@@ -193,7 +193,7 @@ async def play(_, message: Message):
                             text="𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
+                            text="𝐀𝐍𝐉𝐄𝐋🍃",
                             url=f"https://t.me/Godofanjalsupport")
 
                     ]
@@ -261,7 +261,7 @@ async def play(_, message: Message):
                             text="𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="𝐀𝐧𝐣𝐚𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🍃",
+                            text="𝐀𝐍𝐉𝐄𝐋🍃",
                             url=f"https://t.me/Godofanjalsupport")
 
                     ]
