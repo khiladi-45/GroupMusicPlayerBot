@@ -20,9 +20,9 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-@Client.on_message(filters.command("music") & ~filters.edited)
-async def music(client, message):
-    cap = "@KhiladiKing45"
+@Client.on_message(filters.command("song") & ~filters.edited)
+async def song(client, message):
+    cap = "@fsSethubot"
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("Processing...")
     if not url:
@@ -100,5 +100,5 @@ async def music(client, message):
                  title=str(rip_data["title"]),
                  performer=str(rip_data["uploader"]),
                  thumb=lol,
-                 caption=cap)  #Khiladiing45
+                 caption=cap)  #fsSethubot
         await rkp.delete()
