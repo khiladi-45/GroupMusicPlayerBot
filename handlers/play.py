@@ -193,8 +193,8 @@ async def play(_, message: Message):
                             text="𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="𝐀𝐍𝐉𝐄𝐋🍃",
-                            url=f"https://t.me/Godofanjalsupport")
+                            text="fsSethu☘️",
+                            url=f"https://instagram.com/_fake_smile_sethu_?utm_medium=copy_link")
 
                     ]
                 ]
@@ -261,8 +261,8 @@ async def play(_, message: Message):
                             text="𝐘𝐨𝐮𝐭𝐮𝐛𝐞 🍒",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="𝐀𝐍𝐉𝐄𝐋🍃",
-                            url=f"https://t.me/Godofanjalsupport")
+                            text="fsSethu☘️",
+                            url=f"https://instagram.com/_fake_smile_sethu_?utm_medium=copy_link")
 
                     ]
                 ]
